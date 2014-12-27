@@ -1,3 +1,7 @@
 # Diretórios
 /debug
 /quecoreagora
+/gzip
+
+# Outros
+*.zip
