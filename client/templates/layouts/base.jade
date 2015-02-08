@@ -88,7 +88,7 @@ head
 body
 
   // ************************** Scripts Redes Sociais **************************
-  #fb-root
+  //-#fb-root
     script.
       (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -98,16 +98,12 @@ body
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
-  script
+  //-script
               !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
   
   // ************************** Github Ribbon **************************
   a.github(href="https://github.com/guilhermesteves", target="_blank")
     img.github-ribbon(src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png", alt="Fork me on GitHub")
-  
-  <!--[if lte IE 7]>
-  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/''>upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
 
   block layout
     block content

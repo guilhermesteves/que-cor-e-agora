@@ -1,7 +1,7 @@
 <?php
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
+  $name = $_POST['form_name'];
+  $email = $_POST['form_email'];
+  $message = $_POST['msg_text'];
   $from = 'From: Que cor é agora?';
   $to = 'falecom@guilhermeesteves.com';
   $subject = 'Contato via QueCorÉAgora';
@@ -10,12 +10,12 @@
 
   if ($name != '' && $email != '' && $message != '') {
     if (mail ($to, $subject, $body, $from)) {
-      echo '<p>Your message has been sent!</p>';
+      echo '<p>Sua mensagem foi enviada com sucesso!</p>';
     } else {
-      echo '<p>Something went wrong, go back and try again!</p>';
+      echo '<p>Algo deu errado, volte e tente novamente!</p>';
     }
   } else {
-      echo '<p>You need to fill in all required fields!!</p>';
+      echo '<p>Voc^e precisa preencher todos os campos!!</p>';
   }
 
 
