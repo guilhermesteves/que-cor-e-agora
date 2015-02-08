@@ -1,4 +1,17 @@
-# Que-Cor-E-Agora readme
+# Que cor é agora
 
-This is an example readme file.
-Describe your site/app here.
+Quer saber que cor hexadecimal é agora? Seus problemas acabaram!
+
+### Demo
+
+Visite [http://quecoreagora.guilhermeesteves.com](http://quecoreagora.guilhermeesteves.com)
+
+### Frameworks/bibliotecas/etc
+
+- Grunt
+- Bower
+- Yeoman
+- Yeogurt
+- Jade
+- LESS
+- Gestalt (rsrsrs)

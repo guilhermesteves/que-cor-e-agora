@@ -2,10 +2,105 @@
 extends ./layouts/base
 
 block content
-  .container
-    .yeogurt-info
-      h1 Welcome to Yeogurt!
-      p Take a look at the <a href="https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---">documentation</a> and start mixing up something awesome.
-      p
-        img.logo(src="/images/yeogurt-swirl.png", width="75px")
-  code.version v0.14.2
+  #inicio
+    #inicioband
+      #logo
+        img(src="images/logo-grande.png", alt="logo")
+    
+    #menuband
+      ul#menu1
+        li: a.smoothScroll(href="#inicio") INÍCIO
+        li: a.smoothScroll(href="#contato") CONTATO
+
+      select(onchange="MobilescrollToThis(this.value)", name="dropdpown")
+        option(selected="selected", value="") Menu 			    
+        option(value="#inicio") INÍCIO
+        option(value="#contato") CONTATO
+
+    #intro
+      p.introh3
+        span.dottedline_left 
+        | Que cor é agora?
+        span.dottedline_right
+      p#agora.introh1 &nbsp;
+      p#cor.introh4 &nbsp;
+
+    .topsocialicons
+      #facebookiconlarge.circlelarge
+        a(href="https://www.facebook.com/esteves.guilherme", target="_blank")
+          img.contactsocialicon2(src="images/facebook-icn.png", alt="facebook")
+
+      #twittericonlarge.circlelarge
+        a(href="http://twitter.com/guilhermesteves", target="_blank")
+          img.contactsocialicon2(src="images/twitter-icn.png", alt="twitter")
+
+      #linkediniconlarge.circlelarge
+        a(href="http://br.linkedin.com/pub/guilherme-esteves/2a/764/a72", target="_blank")
+          img.contactsocialicon2(src="images/linkedin-icn.png", alt="linkedin")
+
+
+  #hiddenmenu
+    ul#menu
+      li: a.smoothScroll(href="#inicio") INÍCIO
+      li: a.smoothScroll(href="#contato") CONTATO
+
+    select.mobilemenu(onchange="MobilescrollToThis(this.value)", name="dropdpown")
+      option(selected="selected" value="") Menu   
+      option(value="#inicio") TOP
+      option(value="#contato") CONTATO
+
+  //#navcover
+  //.patterndown
+    
+  #contato
+    #contact_content.container
+      #contactheading
+        h1 Contate 
+          span Me
+
+      .contactleft
+        #contact
+          #responsemessage Your message has been sent successfully
+          form#myform(method="post", action="contato.php", name="contactform")
+            p.contactlabel Nome
+            input#form_name.inputoneline(name="form_name", type="text", size="20", value="")
+              
+            p.contactlabel Email
+            input#form_email.inputoneline(name="form_email", type="text", size="20", value="")
+              
+            p.contactlabel Mensagem
+            textarea#msg_text(name="msg_text", cols="40", rows="12")
+              
+            input#submit.submit(type="submit", value="Enviar", name="mysubmit")
+
+      .contact_middle
+        p.headingfont9 Informações de contato
+        p#contactparagraph O que você está esperando? Se você gosta do que está vendo, preencha esse formulário e envie! Faça acontecer!
+        
+        #email.contactitems
+          .circle2
+            img.contactimage2(src="images/email-icon.png", alt="email")
+          h5 falecom@guilhermeesteves.com
+          .smallseparatecontact2
+
+        .headingfont9 Mídias Sociais
+        
+        .contactsocialicons
+          #facebookicon.circle
+            a(href="https://www.facebook.com/esteves.guilherme", target="_blank")
+              img.contactsocialicon(src="images/facebook-icon.png", alt="facebook")
+          #twittericon.circle
+            a(href="http://twitter.com/guilhermesteves", target="_blank")
+              img.contactsocialicon(src="images/twitter-icon.png", alt="twitter")
+          #linkedinicon.circle
+            a(href="http://br.linkedin.com/pub/guilherme-esteves/2a/764/a72", target="_blank")
+              img.contactsocialicon(src="images/linkedin-icon.png", alt="linkedin")
+    .clear40
+      
+  #footer
+    #footercontent.container
+      img(src="images/logo-pequeno.png", alt="footerlogo")
+      br
+      h5#copyright &#169; 2015
+        a(href="http://guilhermeesteves.com", target="_blank")  Guilherme Esteves 
+        
