@@ -1,3 +1,4 @@
+# TODO: tentar com node:alpine
 FROM node:8
 
 ADD yarn.lock /yarn.lock
