@@ -100,7 +100,7 @@ body {
 body {
   font-size: 12px;
   font-family: 'Georgia';
-  //color: #868686;
+  /* //color: #868686; */
   line-height: 23px;
   position: relative;
   font-style: italic;
@@ -275,7 +275,7 @@ h9 {
   height: 75px;
   background-color: #fff;
   position: relative;
-  //top: 6px;
+  /* //top: 6px; */
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,.5);
   z-index: -10;
   background: #fff url('diagonal-lines.png') repeat left top;
@@ -286,7 +286,7 @@ h9 {
   height: 35px;
   background-color: #fff;
   margin: 0 auto;
-  //margin-top: 6px;
+  /* //margin-top: 6px; */
   border-radius: 0px 0px 5px 5px;
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,.5);
   z-index: 100;
@@ -474,8 +474,11 @@ h9 {
 /****************** #Intro Font ****************/
 
 #intro {
-  margin: 0 auto;
-  margin-top:13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 195px);
 }
 
 .introh1 {
@@ -772,7 +775,7 @@ h9 {
 #footer {
   width: 100%;
   height: auto;
-  //background-color: #F6F6F6;
+  /* //background-color: #F6F6F6; */
   margin-top: -11px;
 }
 
@@ -785,7 +788,7 @@ h9 {
   .servicesitem {width: 300px; float: none;}
   #hiddenmenu { font-size: 6px;}
   #logo img {height: 33px; width: 160px;}
-  #logo {height: 33px; width: 160px; padding-top: 8px;}
+  #logo {height: 33px; width: 160px; padding-top: 20px;}
   #clients { display: none; }
   #testimonials { width: 300px;}
   #whatwedo {width: 300px;}
@@ -812,7 +815,7 @@ h9 {
   .introh1 {font-size: 60px; margin-bottom: 9px; margin-bottom: 9px;}
   .introh3 {font-size: 16px; margin-bottom: 0px;}
   .introh4 {width: 300px; font-size: 21px; padding-bottom: 0px; padding-top: 4px;}
-  #intro {margin-top: 25%;}
+  #intro {height: calc(100vh - 165px);}
   h1 {font-size: 60px;}
   #hiddenmenu {margin-top: 44px;}
   #navcover {height: 35px;}
@@ -926,6 +929,7 @@ h9 {
   #menu1 {width: 350px;}
   #menu1 li {font-size: 11px; margin-left: 10px;}
   .contactsection {width: 100%;}
+  #intro {height: calc(100vh - 165px);}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1000px) {

@@ -6,10 +6,10 @@ import * as serviceWorker from './serviceWorker';
 
 function InitialResize() {
   const lengthr = document.documentElement.clientWidth;
-  const heightr = document.documentElement.clientHeight;
+  // const heightr = document.documentElement.clientHeight;
 
   const source = document.getElementById('background');
-  source.style.height = heightr+'px'; // uses current height of page
+   // uses current height of page
   source.style.width = lengthr+'px'; // Uses current width of page
 }
 
