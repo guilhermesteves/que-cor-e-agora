@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import './App.css'
 import logo from './logo.png'
 
 import GithubRibbon from './components/GithubRibbon/GithubRibbon';
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
 
 const formatNumber = number => number < 10 ? `0${number}` : `${number}`;
-
 
 function getBackground(time) {
   const hour = formatNumber(time.getHours());
@@ -47,31 +46,35 @@ class App extends Component {
   }
 
   render() {
-    const {style, hex, display} = getBackground(this.state.time)
-
+    const { style, hex, display } = getBackground(this.state.time)
+    
     return (
-      <div id="background" style={style}>
+      <Fragment>
         <GithubRibbon/>
-        <div id="inicio">
-          <div id="inicioband">
-            <div id="logo">
-              <img src={logo} alt="logo"/>
+        <div id="background" style={style}>
+          
+          <div id="inicio">
+            <div id="inicioband">
+              <div id="logo">
+                <img src={logo} alt="logo" />
+              </div>
+            </div>
+            <div id="intro">
+              <p className="introh3">
+                <span className="dottedline_left" />
+                Que cor é agora?
+                <span className="dottedline_right" />
+              </p>
+              <p className="introh1" id="agora">{display}</p>
+              <p className="introh4" id="cor">{hex}</p>
+              <br/>
+              <p className="introh3">Mais um site de extrema utilidade pública</p>
             </div>
           </div>
-          <div id="intro">
-            <p className="introh3">
-              <span className="dottedline_left"/>
-              Que cor é agora?
-              <span className="dottedline_right"/>
-            </p>
-            <p className="introh1" id="agora">{display}</p>
-            <p className="introh4" id="cor">{hex}</p>
-            <br/>
-            <p className="introh3">Mais um site de extrema utilidade pública</p>
-          </div>
+          
         </div>
-        <Footer/>
-      </div>
+        <Footer style={style} />
+      </Fragment>
     );
   }
 }
