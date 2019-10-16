@@ -6847,7 +6847,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt@^2.0.0:
+nuxt@^2.1.1:
   version "2.10.1"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.10.1.tgz#d02237baea11bfaa63d65e45231c41c6a7c18d49"
   integrity sha512-75QQ3x1WAcoBb7krHLzSXVK2/TKUFCHfsskd0bbdAl1KI9Xweyd6SGtdgGsdjWOlaUhijsXFqrPnfPPmrpLMzQ==
