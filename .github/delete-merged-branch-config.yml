@@ -1,0 +1,4 @@
+exclude:
+  - master
+  - old/react-2018
+  - old/vanilla-2015
