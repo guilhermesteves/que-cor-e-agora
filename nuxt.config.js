@@ -51,7 +51,7 @@ export default {
         content:
           'Quer saber que cor hexadecimal é agora? Seus problemas acabaram!'
       },
-      { property: 'og:image', content: '/img/redes-sociais.png' },
+      { property: 'og:image', content: '/redes_sociais.png' },
       { property: 'og:image:type', content: 'image/jpeg' },
       { property: 'og:image:width', content: '563' },
       { property: 'og:image:height', content: '563' },
@@ -71,7 +71,7 @@ export default {
           'Quer saber que cor hexadecimal é agora? Seus problemas acabaram!'
       },
       { name: 'twitter:creator', content: '@guilhermesteves' },
-      { name: 'twitter:image', content: '/img/redes-sociais.png' }
+      { name: 'twitter:image', content: '/redes_sociais.png' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
